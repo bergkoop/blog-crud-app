@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Blog — blog-crud-app</title>
+<link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+<div class="topnav">
+  <div class="logo">logo</div>
+  <div class="links">
+    <a href="/">home</a>
+    <a href="/blog.html?id=blog-1">my blog</a>
+    <a href="/messages.html">messages</a>
+  </div>
+  <div class="right">
+    <input type="search" placeholder="search">
+    <div class="avatar">y</div>
+  </div>
+</div>
+
+<div class="blog-header" id="blog-header">
+  <div class="avatar-lg">avatar</div>
+  <div class="info">
+    <div class="title script" id="blog-title"></div>
+    <div class="desc" id="blog-desc"></div>
+  </div>
+  <div class="btns">
+    <button class="btn follow">follow</button>
+    <button class="btn">message</button>
+  </div>
+</div>
+
+<div class="layout" style="max-width:900px">
+  <div class="col-center">
+    <div style="font-family:'Architects Daughter',cursive;font-size:12px;color:#57534a;display:flex;gap:16px;align-items:center;border-bottom:1.5px solid #1a1a1a;padding-bottom:8px">
+      <span style="color:#c2502a;border-bottom:2px solid #c2502a;padding-bottom:6px">posts</span>
+      <span id="blog-stats" style="margin-left:auto"></span>
+    </div>
+    <div id="blog-feed"></div>
+  </div>
+
+  <div class="col-right">
+    <div class="card dashed">
+      <h3>about</h3>
+      <div id="blog-about" class="hand" style="font-size:12px;color:#57534a"></div>
+    </div>
+    <div class="card dashed">
+      <h3>tags in this blog</h3>
+      <div class="tag-row" id="blog-tags"></div>
+    </div>
+  </div>
+</div>
+
+<script src="/js/blog.js"></script>
+</body>
+</html>

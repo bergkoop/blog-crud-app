@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Messages — blog-crud-app</title>
+<link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+<div class="topnav">
+  <div class="logo">logo</div>
+  <div class="links">
+    <a href="/">home</a>
+    <a href="/blog.html?id=blog-1">my blog</a>
+    <a href="/messages.html" class="active">messages</a>
+  </div>
+  <div class="right">
+    <input type="search" placeholder="search">
+    <div class="avatar">y</div>
+  </div>
+</div>
+
+<div class="messages-layout">
+  <div class="thread-list" id="thread-list"></div>
+  <div class="thread-view">
+    <div class="thread-view-head" id="thread-view-head"></div>
+    <div class="thread-messages" id="thread-messages"></div>
+    <div class="thread-view-foot">
+      <input type="text" id="message-input" placeholder="write a message…">
+      <button class="send-btn" id="send-btn">send</button>
+    </div>
+  </div>
+</div>
+
+<script src="/js/messages.js"></script>
+</body>
+</html>
